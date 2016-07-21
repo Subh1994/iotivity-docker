@@ -20,8 +20,8 @@ autotools-dev \
 libicu-dev \
 libbz2-dev
 
-ADD iotivity\ \iotivity\
-ADD boost_1_55_0/ /boost_1_55_0/
+ADD iotivity\ /iotivity
+ADD boost_1_55_0/ /boost_1_55_0
 RUN cd boost_1_55_0/ \
 && ./bootstrap.sh --with-libraries=system,filesystem,date_time,thread,regex,log,iostreams,program_options --prefix=/usr/local \
 && ./b2 install \
