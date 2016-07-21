@@ -6,7 +6,7 @@ FROM ubuntu:14.04
 
 MAINTAINER Subhash Kumar <subhash.kumar@smartron.com>
 
-apt-get install -y \
+RUN apt-get install -y \
 build-essential \
 g++ \
 libglib2.0-dev \
