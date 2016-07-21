@@ -6,6 +6,8 @@ FROM ubuntu:14.04
 
 MAINTAINER Subhash Kumar <subhash.kumar@smartron.com>
 
+RUN apt-get update
+
 RUN apt-get install -y \
 build-essential \
 g++ \
