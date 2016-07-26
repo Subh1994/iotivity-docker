@@ -29,7 +29,7 @@ RUN cd boost_1_55_0/ \
 && ldconfig \
 && cd ../iotivity/ \
 && scons \
-&& mv /iotivity/out/linux/x86_64/release/resource/examples/ / \
+&& mv /iotivity/out/ / \
 && rm -rf /iotivity/ \
 && rm -rf /boost_1_55_0/
 
