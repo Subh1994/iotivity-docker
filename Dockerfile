@@ -28,7 +28,4 @@ RUN cd boost_1_55_0/ \
 && sh -c 'echo '/usr/local/lib' >> /etc/ld.so.conf.d/local.conf' \
 && ldconfig \
 && cd ../iotivity/ \
-&& scons \
-&& mv /iotivity/out/linux/x86_64/release/resource/examples/ / \
-&& rm -rf /iotivity/ \
-&& rm -rf /boost_1_55_0/
+&& scons 
